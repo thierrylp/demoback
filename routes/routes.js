@@ -6,7 +6,8 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res) {
   //mongodb.getVal(res);
-  res.send(mongodb.getVal(res));
+  //res.send(mongodb.getVal(res));
+  res.send({"id":123, "value":"truc"})
   console.log(res.body);
 });
 
